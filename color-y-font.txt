@@ -1,0 +1,12 @@
+Color rojo rgb(159, 54, 71);
+
+
+Color de letras rgb(255, 255, 255);
+
+Fondo negro y boton de iniciar sesion rgb(24, 20, 25);
+
+font nunito sanserif 64px
+
+Fondo de form de registro rgb(42, 42, 42);
+
+Letras ¿Necesitas ayuda? color: rgb(120, 120, 120);

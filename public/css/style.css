@@ -1,0 +1,359 @@
+
+
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Selectores de etiqueta */
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem; 
+    font-weight: bold;
+    height: 15vh;
+    justify-content: center;
+}
+    footer ul {
+        display: flex;
+    }
+        footer li {
+            margin-left: 2rem;
+        }
+    footer div {
+        position: sticky;
+        bottom: 0;
+    }
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Selectores de clase */
+
+.acclaimed-movies {
+    height: 80%;
+    margin: 1rem auto 6rem auto;
+    text-align: center;
+    width: 80%;
+}
+    .acclaimed-movies h3 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    .acclaimed-movies div {
+        display: flex;
+        height: 80%;
+        padding-bottom: 4rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+    }
+        .acclaimed-movies article {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 2rem;
+        }
+        .acclaimed-movies img {
+            border-radius: 1rem;
+            height: 250px;
+            width: 170px;
+        }
+
+.arrow-up {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
+    margin: 4rem 0;
+}
+    .articles-container article {
+        height: 300px;
+        width: 200px;
+    }
+        .articles-container img {
+            border-radius: 1rem;
+            height: 100%;
+            width: 100%;
+        }
+
+.bg-banner {
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url("../img/banner-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-black {
+    background-color: rgb(24, 20, 25);
+    color: rgb(255, 255, 255);
+}
+
+.bg-red {
+    background-color: rgb(159, 54, 71);
+    color: rgb(255, 255, 255);
+}
+
+.bg-grey {
+    background-color: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
+}
+
+.bg-popcorn {
+    background-image: linear-gradient(to right top, #24242473, #24242473), url("../img/bg-register.jpg");
+    background-size: cover;
+    background-position: center;
+}
+    .bg-popcorn main {
+        height: 90vh;
+    }
+
+.black-button {
+    background-color: rgb(24, 20, 25);
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem; 
+    font-weight: bold;
+    padding: 0.8rem 1.6rem;
+}
+
+.header-index {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+
+.header-register {
+    height: 8vh;
+    padding: 3rem 0 2rem 3rem;
+}
+
+.help-register {
+    color: rgb(120, 120, 120);
+    font-size: 1.5rem;
+}
+
+.hero-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+}
+    .hero-section h1 {
+        font-size: 6.5rem;
+        font-weight: 700;
+        margin-bottom: 1.6rem;
+    }
+    .hero-section h2 {
+        font-size: 3.8rem;
+        font-weight: 400;
+        margin-bottom: 1.6rem;
+    }
+
+
+
+.movies-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom:  0.2rem solid rgb(159, 54, 71);
+    border-top:  0.2rem solid rgb(159, 54, 71);
+    margin: auto;
+    padding-bottom: 6rem;
+    width: 80%;
+}
+    .movies-section h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+    .movies-section button {
+        border: solid rgb(255, 255, 255) 0.1rem;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        margin: 3rem 1.2rem;
+        padding: 1.5rem 1.5rem;
+
+    }
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 3.2rem;
+    padding-top: 1rem;
+}
+    .nav-bar ul {
+        display: flex;
+    }
+        .nav-bar li {
+            margin: 2rem;
+        }
+            .nav-bar a {
+                padding: 0.8rem 1.6rem;
+            }
+
+.nav-button:hover {
+    background-color: rgb(159, 54, 71);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(42, 42, 42, 0.3);
+
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: 700;          
+    text-decoration: none;
+
+}
+
+.red-shadow:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(159, 54, 71, 0.3);
+}
+
+.register {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 30%;
+}
+    .register h1 {
+        font-size: 3.5rem;
+    }
+    .register form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem;
+        width: 100%;
+    }
+        .register form div {
+            align-items: center;
+            display: flex;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+.register-button {
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.6rem 3rem;
+    width: 100%;
+
+}
+
+.register-button-index {
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.6rem 3rem;
+
+}
+
+.register-input {
+    background-color: rgb(51, 51, 51);
+    border: solid rgb(159, 54, 71) 0.2rem;
+    border-radius: 4rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    height: 3.5rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.register-login {
+    background-color: rgb(42, 42, 42);
+    border: none;
+    color: rgb(120, 120, 120);
+    font-size: 1.5rem;
+}
+    
+.search-bar {
+    border: none;
+    border-radius: 4rem;
+    font-size: 2rem;
+    margin: 3rem 0.5rem;
+    padding: 1.2rem 2rem;
+    width: 50rem;
+}
+
+.search-button {
+    border: solid rgb(255, 255, 255) 0.2rem;
+    border-radius: 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 3rem 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.search-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+    .search-section h2 {
+        font-size: 4rem;
+        margin-bottom: 2.5rem;
+    }
+
+.terminos {
+    font-size: 1.2rem;
+}
+    .terminos label {
+        margin-left: 1rem;
+    }
+
+.white-shadow:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.3);
+}    
+
+/* Barra scroll */
+::-webkit-scrollbar {
+    width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(23, 23, 23);
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(159, 54, 71);
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background:rgb(159, 54, 71);
+}
