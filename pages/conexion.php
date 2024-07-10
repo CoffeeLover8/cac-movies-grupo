@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         if ($password === $storedPassword) { // Comparación directa
             $_SESSION['user_id'] = $row['id'];
-            header("Location: /PaginasWeb/cac-movies-grupo/pages/registrarpelicula.php"); // Redirige al éxito
+            header("Location: /PaginasWeb/cac-movies-grupo/pages/index-peliculas.php"); // Redirige al éxito
             exit();
         } else {
             $error = "Contraseña incorrecta";

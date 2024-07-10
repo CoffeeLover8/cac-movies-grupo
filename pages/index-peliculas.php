@@ -37,10 +37,12 @@ mysqli_report(MYSQLI_REPORT_ERROR);
 $DB_HOST = "localhost";
 $DB_USER = "root";
 $DB_PASS = "";
-$DB_NAME = "peliculas";
+$DB_NAME = "proyecto";
 
 $conexion = @mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 $db_errno = mysqli_connect_errno();
+
+
 if ($db_errno) {
     $db_errmsg = mysqli_connect_error();
     $db_msg_alert = "Error al conectar con la Base de Datos - Se muestran datos de desarrollo. - Error No. $db_errno: $db_errmsg";
@@ -69,7 +71,7 @@ if ($db_errno) {
 /* * * * * * * * * * * * * *
  * CONSULTA BASE DE DATOS  *
  * * * * * * * * * * * * * */
-$DB_TABLE_PELICULAS = "view_movies";
+$DB_TABLE_PELICULAS = "peliculas";
 $consulta = mysqli_query($conexion, "SELECT * FROM $DB_TABLE_PELICULAS");
 $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 }
@@ -132,7 +134,7 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
                 <div class="content-header">
                     <h1>Películas</h1>
                     <!-- Botón de registrar pelicula -->
-                    <a href="new.html" class="bg-red register-button-index white-shadow new-button">+ Nueva</a>
+                    <a href="adm-peliculas.html" class="bg-red register-button-index white-shadow new-button">+ Nueva</a>
                 </div>
                 
                 <table>
@@ -140,6 +142,7 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
                         <tr>
                             <th>#</th>
                             <th>Título</th>
+                            <th>Descripción</th>
                             <th>Director</th>
                             <th>Género</th>
                             <th>Año</th>
@@ -151,6 +154,7 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
                             <tr>
                                 <td><?php echo $pelicula["id_movie"] ?></td>
                                 <td><?php echo $pelicula["nombre"] ?></td>
+                                <td><?php echo $pelicula["descripcion"] ?></td>
                                 <td><?php echo $pelicula["director"] ?></td>
                                 <td><?php echo $pelicula["genero"] ?></td>
                                 <td><?php echo $pelicula["ano"] ?></td>
