@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-07-2024 a las 18:40:10
+-- Tiempo de generación: 10-07-2024 a las 23:32:28
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -28,20 +28,20 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `peliculas` (
-  `id` int(11) NOT NULL,
-  `titulo` varchar(30) NOT NULL,
+  `id_movie` int(11) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
   `descripcion` varchar(50) NOT NULL,
   `genero` varchar(10) NOT NULL,
-  `cant_estrellas` int(1) NOT NULL,
+  `estrellas` int(1) NOT NULL,
   `director` varchar(20) NOT NULL,
-  `anio` int(4) NOT NULL
+  `ano` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `peliculas`
 --
 
-INSERT INTO `peliculas` (`id`, `titulo`, `descripcion`, `genero`, `cant_estrellas`, `director`, `anio`) VALUES
+INSERT INTO `peliculas` (`id_movie`, `nombre`, `descripcion`, `genero`, `estrellas`, `director`, `ano`) VALUES
 (1, 'Misión Imposible', 'kjbigyigyigyp', 'acción', 5, 'Juan Perez', 2023),
 (2, 'Misión Imposible', 'kjbigyigyigyp', 'acción', 5, 'Juan Perez', 2023);
 
@@ -77,7 +77,7 @@ INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `email`, `password`, `fecha_
 -- Indices de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_movie`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -93,7 +93,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_movie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
