@@ -86,10 +86,10 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link de CSS -->
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/css/style_admin.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/style_admin.css">
     <!-- Link a fav icon -->
-    <link rel="shortcut icon" href="/public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon">
     <!-- Link a iconos -->
     <script src="https://kit.fontawesome.com/31640eb81d.js" crossorigin="anonymous"></script>
     <!-- Link de fonts -->
@@ -106,16 +106,16 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
         <nav class="nav-bar">
 
             <!-- Logo de CAC-Movies -->
-            <a href="/index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <i class="fa-solid fa-film"></i>
                 <span>CAC-Movies</span>
             </a>
 
             <ul>
-                <li><a href="/pages/catApi.html">CatApi</a></li>
+                <li><a href="catApi.html">CatApi</a></li>
                 <li><a href="#" class="nav-button">Tendencias</a></li>
-                <li><a href="/pages/register.html" class="nav-button">Registrarse</a></li>
-                <li><a href="/pages/login.html" class="black-button nav-button">Iniciar Sesión</a></li>
+                <li><a href="register.html" class="nav-button">Registrarse</a></li>
+                <li><a href="login.html" class="black-button nav-button">Iniciar Sesión</a></li>
             </ul>
 
         </nav>
@@ -134,7 +134,7 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
                 <div class="content-header">
                     <h1>Películas</h1>
                     <!-- Botón de registrar pelicula -->
-                    <a href="adm-peliculas.html" class="bg-red register-button-index white-shadow new-button">+ Nueva</a>
+                    <a href="./new-peliculas.html" class="bg-red register-button-index white-shadow new-button">+ Nueva</a>
                 </div>
                 
                 <table>
@@ -189,7 +189,7 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 
                 <li><a href="#">Ayuda</a></li>
 
-                <li><a href="/pages/admin/" class="black-button">Administrador Peliculas</a></li>
+                <li><a href="#" class="black-button">Administrador Peliculas</a></li>
 
             </ul>
 
@@ -199,7 +199,7 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
         <div class="arrow-up">
 
             <a href="#">
-                <img src="/public/img/flecha-hacia-arriba.png" alt="Flecha hacia arriba">
+                <img src="../public/img/flecha-hacia-arriba.png" alt="Flecha hacia arriba">
             </a>
 
         </div>
