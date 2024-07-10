@@ -37,16 +37,16 @@
         <section class="bg-grey register">
 
             <!-- Form de login -->
-            <form action="#">
+            <form name="iniciar" action="/PaginasWeb/cac-movies-grupo/pages/conexion.php" method="post">
 
                 <h1>Iniciar Sesión</h1>
 
                 <div>
-                    <input type="email" placeholder="Email" class="register-input">
+                    <input name="email" type="email" placeholder="Email" class="register-input">
                 </div>
 
                 <div>
-                    <input type="password" placeholder="Contraseña" class="register-input">
+                    <input name="password" type="password" placeholder="Contraseña" class="register-input">
                 </div>
 
                 <div>
@@ -54,7 +54,7 @@
                 </div>
 
                 <div>
-                    <a href="/cac-movies-grupo/pages/register.html" class="register-login">Registrarse</a>
+                    <a href="/PaginasWeb/cac-movies-grupo/pages/register.html" class="register-login">Registrarse</a>
                 </div>
 
             </form>
@@ -64,7 +64,7 @@
     </main>
 
     <!-- Enlace a archivo JS -->
-    <script src="../index.js"></script>
+    <script src="/cac-movies-grupo/iniciar.js"></script>
 
 </body>
 

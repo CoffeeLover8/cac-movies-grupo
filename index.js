@@ -1,3 +1,12 @@
+// formulario debe contener valor
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("iniciar");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
 // Validación de formulario de login
 
