@@ -92,13 +92,23 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
     <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon">
     <!-- Link a iconos -->
     <script src="https://kit.fontawesome.com/31640eb81d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Link de fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>CAC-MOVIES</title>
 
 </head>
+<script>
+    function eliminar(){
+        var respuesta=confirm("¿Deseas eliminar este registro?")
+        return respuesta
+    }
+</script>
 
 <body class="bg-popcorn">
+    <?php
+    include "eliminar.php";
+    ?>
 
     <!-- Comienzo de header -->
     <header class="bg-red header-index">
@@ -159,6 +169,8 @@ $peliculas = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
                                 <td><?php echo $pelicula["genero"] ?></td>
                                 <td><?php echo $pelicula["ano"] ?></td>
                                 <td><?php echo get_estrellas(intval($pelicula["estrellas"])) ?></td>
+                                <td><a href="editar.php?id=<?php echo $pelicula['id_movie'] ?>"><i class="fa-solid fa-pen"></i></a></td>
+                                <td><a onclick="return eliminar()" href="index-peliculas.php?id=<?php echo $pelicula['id_movie'] ?>"><i class="fa-solid fa-trash"></i></a></td>
                             </tr>
                         <?php } ?>   
                     </tbody>
