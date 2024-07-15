@@ -61,42 +61,30 @@
         <section class="bg-grey admin">
 
             <!-- Form de registro -->
-            <form method="POST" action="create.php" class="content">
+            <form method="POST" action="./create-peliculas.php" class="content">
 
                 <h1>Registro de película</h1>
 
                 <div>
-                    <input type="text" placeholder="Título" class="register-input">
+                    <input type="text" name="titulo" placeholder="Título" class="register-input">
                 </div>
 
                 <div>
-                    <input type="text" placeholder="Descripción" class="register-input">
+                    <input type="text" name="descripcion" placeholder="Descripción" class="register-input">
                 </div>
 
 
                 <div>
-                    <input type="text" placeholder="Director" class="register-input">
+                    <input type="text" name="director" placeholder="Director" class="register-input">
                 </div>
 
                 <div>
-                    <select name="#" id="#" class="register-input">
-                        <option value="">Género</option>
-                        <option value="#">Argentina</option>
-                        <option value="#">Bolivia</option>
-                        <option value="#">Brasil</option>
-                        <option value="#">Chile</option>
-                        <option value="#">Colombia</option>
-                        <option value="#">Ecuador</option>
-                        <option value="#">Paraguay</option>
-                        <option value="#">Perú</option>
-                        <option value="#">Uruguay</option>
-                        <option value="#">Venezuela</option>
-                    </select>
+                    <input type="text" name="genero" placeholder="Género" class="register-input">
                 </div>
 
                 <div class="row">
-                    <input type="text" placeholder="Año" class="register-input">
-                    <input type="text" placeholder="Estrellas" class="register-input">
+                    <input type="text" name="anio" placeholder="Año" class="register-input">
+                    <input type="text" name="estrellas" placeholder="Estrellas" class="register-input">
                 </div>
 
                 <div>
